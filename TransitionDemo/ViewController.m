@@ -11,6 +11,7 @@
 #import "ExDemo2ViewController.h"
 #import "ExDemo3ViewController.h"
 #import "ExDemo4ViewController.h"
+#import "WCTransitions.h"
 
 static NSString *identifier = @"identifier";
 
@@ -20,6 +21,8 @@ static NSString *identifier = @"identifier";
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSArray *dataSource;
+
+@property (strong, nonatomic) WCTransitioningDelegate *transDelegate;
 
 @end
 
@@ -108,24 +111,38 @@ static NSString *identifier = @"identifier";
 }
 
 - (void)presentDemoVC2 {
+    self.transDelegate = [WCTransitionManager transitionForTransDelegate2];
+    
     ExDemo2ViewController *vc = [[ExDemo2ViewController alloc] init];
     vc.title = @"demo2";
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    vc.transitioningDelegate = self.transDelegate;
+    
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)presentDemoVC3 {
+    self.transDelegate = [WCTransitionManager transitionForTransDelegate3];
     ExDemo3ViewController *vc = [[ExDemo3ViewController alloc] init];
     vc.title = @"demo3";
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    vc.transitioningDelegate = self.transDelegate;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)presentDemoVC4 {
+    self.transDelegate = [WCTransitionManager transitionForTransDelegate4];
     ExDemo4ViewController *vc = [[ExDemo4ViewController alloc] init];
     vc.title = @"demo4";
+    vc.transitioningDelegate = self.transDelegate;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-#pragma mark - Custom Trans
+#pragma mark - WCAnimationViewControllerDelegate
+- (UIView *)animationView {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20, 120, 30, 30)];
+    return view;
+}
 
 #pragma mark - Getters/Setters
 - (UITableView *)tableView {

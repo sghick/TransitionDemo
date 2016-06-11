@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WCTransitionsDefine.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<WCAnimationViewControllerDelegate>
 
+- (UIView *)animationView;
 
 @end
 

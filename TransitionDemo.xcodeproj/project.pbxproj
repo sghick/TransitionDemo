@@ -16,6 +16,11 @@
 		FE48AC971D0BD15400A01C6E /* ExDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48AC961D0BD15400A01C6E /* ExDemo2ViewController.m */; };
 		FE48AC9A1D0BD15900A01C6E /* ExDemo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48AC991D0BD15900A01C6E /* ExDemo3ViewController.m */; };
 		FE48AC9D1D0BD15E00A01C6E /* ExDemo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48AC9C1D0BD15E00A01C6E /* ExDemo4ViewController.m */; };
+		FE48ACAB1D0BDF0C00A01C6E /* UIView+WCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48ACA01D0BDF0C00A01C6E /* UIView+WCTransition.m */; };
+		FE48ACAC1D0BDF0C00A01C6E /* WCAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48ACA21D0BDF0C00A01C6E /* WCAnimatedTransitioning.m */; };
+		FE48ACAD1D0BDF0C00A01C6E /* WCTransitionAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48ACA41D0BDF0C00A01C6E /* WCTransitionAnimations.m */; };
+		FE48ACAE1D0BDF0C00A01C6E /* WCTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48ACA61D0BDF0C00A01C6E /* WCTransitioningDelegate.m */; };
+		FE48ACAF1D0BDF0C00A01C6E /* WCTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48ACA81D0BDF0C00A01C6E /* WCTransitionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,18 @@
 		FE48AC991D0BD15900A01C6E /* ExDemo3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExDemo3ViewController.m; sourceTree = "<group>"; };
 		FE48AC9B1D0BD15E00A01C6E /* ExDemo4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExDemo4ViewController.h; sourceTree = "<group>"; };
 		FE48AC9C1D0BD15E00A01C6E /* ExDemo4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExDemo4ViewController.m; sourceTree = "<group>"; };
+		FE48AC9F1D0BDF0C00A01C6E /* UIView+WCTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WCTransition.h"; sourceTree = "<group>"; };
+		FE48ACA01D0BDF0C00A01C6E /* UIView+WCTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WCTransition.m"; sourceTree = "<group>"; };
+		FE48ACA11D0BDF0C00A01C6E /* WCAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAnimatedTransitioning.h; sourceTree = "<group>"; };
+		FE48ACA21D0BDF0C00A01C6E /* WCAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAnimatedTransitioning.m; sourceTree = "<group>"; };
+		FE48ACA31D0BDF0C00A01C6E /* WCTransitionAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTransitionAnimations.h; sourceTree = "<group>"; };
+		FE48ACA41D0BDF0C00A01C6E /* WCTransitionAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTransitionAnimations.m; sourceTree = "<group>"; };
+		FE48ACA51D0BDF0C00A01C6E /* WCTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTransitioningDelegate.h; sourceTree = "<group>"; };
+		FE48ACA61D0BDF0C00A01C6E /* WCTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTransitioningDelegate.m; sourceTree = "<group>"; };
+		FE48ACA71D0BDF0C00A01C6E /* WCTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTransitionManager.h; sourceTree = "<group>"; };
+		FE48ACA81D0BDF0C00A01C6E /* WCTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTransitionManager.m; sourceTree = "<group>"; };
+		FE48ACA91D0BDF0C00A01C6E /* WCTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTransitions.h; sourceTree = "<group>"; };
+		FE48ACAA1D0BDF0C00A01C6E /* WCTransitionsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTransitionsDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,7 @@
 				FE48AC781D0BB99200A01C6E /* AppDelegate.m */,
 				FE48AC7A1D0BB99200A01C6E /* ViewController.h */,
 				FE48AC7B1D0BB99200A01C6E /* ViewController.m */,
+				FE48AC9E1D0BDF0C00A01C6E /* WCTransitions */,
 				FE48AC8B1D0BC2DE00A01C6E /* Examples */,
 				FE48AC801D0BB99200A01C6E /* Assets.xcassets */,
 				FE48AC821D0BB99200A01C6E /* LaunchScreen.storyboard */,
@@ -102,6 +120,25 @@
 				FE48AC9C1D0BD15E00A01C6E /* ExDemo4ViewController.m */,
 			);
 			path = Examples;
+			sourceTree = "<group>";
+		};
+		FE48AC9E1D0BDF0C00A01C6E /* WCTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				FE48AC9F1D0BDF0C00A01C6E /* UIView+WCTransition.h */,
+				FE48ACA01D0BDF0C00A01C6E /* UIView+WCTransition.m */,
+				FE48ACA11D0BDF0C00A01C6E /* WCAnimatedTransitioning.h */,
+				FE48ACA21D0BDF0C00A01C6E /* WCAnimatedTransitioning.m */,
+				FE48ACA31D0BDF0C00A01C6E /* WCTransitionAnimations.h */,
+				FE48ACA41D0BDF0C00A01C6E /* WCTransitionAnimations.m */,
+				FE48ACA51D0BDF0C00A01C6E /* WCTransitioningDelegate.h */,
+				FE48ACA61D0BDF0C00A01C6E /* WCTransitioningDelegate.m */,
+				FE48ACA71D0BDF0C00A01C6E /* WCTransitionManager.h */,
+				FE48ACA81D0BDF0C00A01C6E /* WCTransitionManager.m */,
+				FE48ACA91D0BDF0C00A01C6E /* WCTransitions.h */,
+				FE48ACAA1D0BDF0C00A01C6E /* WCTransitionsDefine.h */,
+			);
+			path = WCTransitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,10 +211,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE48AC8E1D0BD12200A01C6E /* ExDemo1ViewController.m in Sources */,
+				FE48ACAB1D0BDF0C00A01C6E /* UIView+WCTransition.m in Sources */,
+				FE48ACAC1D0BDF0C00A01C6E /* WCAnimatedTransitioning.m in Sources */,
 				FE48AC7C1D0BB99200A01C6E /* ViewController.m in Sources */,
+				FE48ACAF1D0BDF0C00A01C6E /* WCTransitionManager.m in Sources */,
 				FE48AC971D0BD15400A01C6E /* ExDemo2ViewController.m in Sources */,
 				FE48AC9D1D0BD15E00A01C6E /* ExDemo4ViewController.m in Sources */,
 				FE48AC791D0BB99200A01C6E /* AppDelegate.m in Sources */,
+				FE48ACAD1D0BDF0C00A01C6E /* WCTransitionAnimations.m in Sources */,
+				FE48ACAE1D0BDF0C00A01C6E /* WCTransitioningDelegate.m in Sources */,
 				FE48AC9A1D0BD15900A01C6E /* ExDemo3ViewController.m in Sources */,
 				FE48AC761D0BB99200A01C6E /* main.m in Sources */,
 			);
@@ -320,6 +362,7 @@
 				FE48AC8A1D0BB99200A01C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
