@@ -72,6 +72,25 @@ typedef NS_ENUM(NSInteger, WCTransitioningDelegateVCType) {
     WCTransitioningDelegateVCTo,
 };
 
+//手势响应
+typedef void(^GestureConifg)();
+
+//手势的方向
+typedef NS_ENUM(NSUInteger, WCInteractiveTransitionGestureDirection) {
+    WCInteractiveTransitionGestureDirectionLeft = 0,
+    WCInteractiveTransitionGestureDirectionRight,
+    WCInteractiveTransitionGestureDirectionUp,
+    WCInteractiveTransitionGestureDirectionDown
+};
+
+//手势控制哪种转场
+typedef NS_ENUM(NSUInteger, WCInteractiveTransitionType) {
+    WCInteractiveTransitionTypePresent = 0,
+    WCInteractiveTransitionTypeDismiss,
+    WCInteractiveTransitionTypePush,
+    WCInteractiveTransitionTypePop,
+};
+
 typedef NS_ENUM(NSInteger, WCViewAnimationOptions) {
     WCViewAnimationOptionsNone,             // 无
     WCViewAnimationOptionsPointBlowup,      // 圆点扩散

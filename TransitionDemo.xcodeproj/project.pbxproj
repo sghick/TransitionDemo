@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDB17BB11D0D52B600BE9689 /* WCInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB17BB01D0D52B600BE9689 /* WCInteractiveTransition.m */; };
 		FE48AC761D0BB99200A01C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48AC751D0BB99200A01C6E /* main.m */; };
 		FE48AC791D0BB99200A01C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48AC781D0BB99200A01C6E /* AppDelegate.m */; };
 		FE48AC7C1D0BB99200A01C6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48AC7B1D0BB99200A01C6E /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDB17BAF1D0D52B600BE9689 /* WCInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCInteractiveTransition.h; sourceTree = "<group>"; };
+		BDB17BB01D0D52B600BE9689 /* WCInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCInteractiveTransition.m; sourceTree = "<group>"; };
 		FE48AC711D0BB99200A01C6E /* TransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE48AC751D0BB99200A01C6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE48AC771D0BB99200A01C6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,8 +128,12 @@
 		FE48AC9E1D0BDF0C00A01C6E /* WCTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				FE48ACA91D0BDF0C00A01C6E /* WCTransitions.h */,
+				FE48ACAA1D0BDF0C00A01C6E /* WCTransitionsDefine.h */,
 				FE48AC9F1D0BDF0C00A01C6E /* UIView+WCTransition.h */,
 				FE48ACA01D0BDF0C00A01C6E /* UIView+WCTransition.m */,
+				BDB17BAF1D0D52B600BE9689 /* WCInteractiveTransition.h */,
+				BDB17BB01D0D52B600BE9689 /* WCInteractiveTransition.m */,
 				FE48ACA11D0BDF0C00A01C6E /* WCAnimatedTransitioning.h */,
 				FE48ACA21D0BDF0C00A01C6E /* WCAnimatedTransitioning.m */,
 				FE48ACA31D0BDF0C00A01C6E /* WCTransitionAnimations.h */,
@@ -135,8 +142,6 @@
 				FE48ACA61D0BDF0C00A01C6E /* WCTransitioningDelegate.m */,
 				FE48ACA71D0BDF0C00A01C6E /* WCTransitionManager.h */,
 				FE48ACA81D0BDF0C00A01C6E /* WCTransitionManager.m */,
-				FE48ACA91D0BDF0C00A01C6E /* WCTransitions.h */,
-				FE48ACAA1D0BDF0C00A01C6E /* WCTransitionsDefine.h */,
 			);
 			path = WCTransitions;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				FE48AC7C1D0BB99200A01C6E /* ViewController.m in Sources */,
 				FE48ACAF1D0BDF0C00A01C6E /* WCTransitionManager.m in Sources */,
 				FE48AC971D0BD15400A01C6E /* ExDemo2ViewController.m in Sources */,
+				BDB17BB11D0D52B600BE9689 /* WCInteractiveTransition.m in Sources */,
 				FE48AC9D1D0BD15E00A01C6E /* ExDemo4ViewController.m in Sources */,
 				FE48AC791D0BB99200A01C6E /* AppDelegate.m in Sources */,
 				FE48ACAD1D0BDF0C00A01C6E /* WCTransitionAnimations.m in Sources */,
