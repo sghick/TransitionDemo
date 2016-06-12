@@ -51,6 +51,14 @@
  */
 @property (copy  , nonatomic) WCHandleDelegateNavBarControllerBlock handleDelegateNavBarControllerBlock;
 
+/**
+ *  设置推出视图主次,默认from,设置之后会判断是否交换fromVC和toVC
+ */
+@property (assign, nonatomic) WCTransitioningDelegateVCType transVCType;
+
+@property (weak  , nonatomic, readonly) UIViewController *fromVC;
+@property (weak  , nonatomic, readonly) UIViewController *toVC;
+
 #pragma mark - DelegateBlock
 /**
  *  动画执行代理
@@ -75,5 +83,10 @@
 - (void)setAnimationDidStopDelegateBlock:(WCAnimationDidStopDelegateBlock)animationDidStopDelegateBlock;
 - (void)animationDidStart:(CAAnimation *)anim;
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag;
+
+/**
+ *  设置fromVC和toVC
+ */
+- (void)setFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC;
 
 @end

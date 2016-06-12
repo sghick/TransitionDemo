@@ -20,4 +20,7 @@
 
 - (instancetype)initWithSingleAnimatedTransitioning:(WCAnimatedTransitioning *)singleTrans;
 
+// 推荐设置
+- (void)setFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC;
+
 @end

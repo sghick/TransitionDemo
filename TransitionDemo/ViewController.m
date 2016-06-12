@@ -112,10 +112,10 @@ static NSString *identifier = @"identifier";
 
 - (void)presentDemoVC2 {
     self.transDelegate = [WCTransitionManager transitionForTransDelegate2];
-    
     ExDemo2ViewController *vc = [[ExDemo2ViewController alloc] init];
     vc.title = @"demo2";
     vc.modalPresentationStyle = UIModalPresentationCustom;
+    [self.transDelegate setFromViewController:self toViewController:vc];
     vc.transitioningDelegate = self.transDelegate;
     
     [self presentViewController:vc animated:YES completion:nil];
@@ -126,6 +126,7 @@ static NSString *identifier = @"identifier";
     ExDemo3ViewController *vc = [[ExDemo3ViewController alloc] init];
     vc.title = @"demo3";
     vc.modalPresentationStyle = UIModalPresentationCustom;
+    [self.transDelegate setFromViewController:self toViewController:vc];
     vc.transitioningDelegate = self.transDelegate;
     [self presentViewController:vc animated:YES completion:nil];
 }
@@ -135,6 +136,7 @@ static NSString *identifier = @"identifier";
     ExDemo4ViewController *vc = [[ExDemo4ViewController alloc] init];
     vc.title = @"demo4";
     vc.transitioningDelegate = self.transDelegate;
+    [self.transDelegate setFromViewController:self toViewController:vc];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
