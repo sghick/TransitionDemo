@@ -133,12 +133,12 @@ static NSString *identifier = @"identifier";
     vc.title = @"demo3";
 //    vc.modalPresentationStyle = UIModalPresentationCustom;
     
-    __weak typeof(self) weakSelf = self;
+//    __weak typeof(self) weakSelf = self;
     [self.transDelegate setFromViewController:self toViewController:vc];
-    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypePush direction:WCInteractiveTransitionGestureDirectionLeft gestureConifg:^{
-        [weakSelf.navigationController pushViewController:vc animated:YES];
-    }];
-    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypePop direction:WCInteractiveTransitionGestureDirectionRight gestureConifg:nil];
+//    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypePush direction:WCInteractiveTransitionGestureDirectionLeft gestureConifg:^{
+//        [weakSelf.navigationController pushViewController:vc animated:YES];
+//    }];
+//    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypePop direction:WCInteractiveTransitionGestureDirectionRight gestureConifg:nil];
     self.navigationController.delegate = self.transDelegate;
     [self.navigationController pushViewController:vc animated:YES];
 }
