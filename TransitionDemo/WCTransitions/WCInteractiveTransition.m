@@ -103,7 +103,11 @@
             break;
             
         case WCInteractiveTransitionTypeDismiss:
-            [_vc dismissViewControllerAnimated:YES completion:nil];
+            if (_dismissConifg) {
+                _dismissConifg();
+            } else {
+                [_vc dismissViewControllerAnimated:YES completion:nil];
+            }
             break;
         case WCInteractiveTransitionTypePush:{
             if (_pushConifg) {
@@ -112,7 +116,11 @@
         }
             break;
         case WCInteractiveTransitionTypePop:
-            [_vc.navigationController popViewControllerAnimated:YES];
+            if (_popConifg) {
+                _popConifg();
+            } else {
+                [_vc.navigationController popViewControllerAnimated:YES];
+            }
             break;
     }
 }

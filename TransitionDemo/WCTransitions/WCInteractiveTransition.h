@@ -14,8 +14,10 @@
 @property (nonatomic, assign) BOOL interation;
 /**促发手势present的时候的config，config中初始化并present需要弹出的控制器*/
 @property (nonatomic, copy) GestureConifg presentConifg;
+@property (nonatomic, copy) GestureConifg dismissConifg;
 /**促发手势push的时候的config，config中初始化并push需要弹出的控制器*/
 @property (nonatomic, copy) GestureConifg pushConifg;
+@property (nonatomic, copy) GestureConifg popConifg;
 
 //初始化方法
 

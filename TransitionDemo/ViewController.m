@@ -115,20 +115,32 @@ static NSString *identifier = @"identifier";
     ExDemo2ViewController *vc = [[ExDemo2ViewController alloc] init];
     vc.title = @"demo2";
     vc.modalPresentationStyle = UIModalPresentationCustom;
+    
+    __weak typeof(self) weakSelf = self;
     [self.transDelegate setFromViewController:self toViewController:vc];
+    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypePresent direction:WCInteractiveTransitionGestureDirectionLeft gestureConifg:^{
+        [weakSelf presentViewController:vc animated:YES completion:nil];
+    }];
+    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypeDismiss direction:WCInteractiveTransitionGestureDirectionRight gestureConifg:nil];
     vc.transitioningDelegate = self.transDelegate;
     
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)presentDemoVC3 {
-    self.transDelegate = [WCTransitionManager transitionForTransDelegate3];
+    self.transDelegate = [WCTransitionManager transitionForTransDelegate1];
     ExDemo3ViewController *vc = [[ExDemo3ViewController alloc] init];
     vc.title = @"demo3";
-    vc.modalPresentationStyle = UIModalPresentationCustom;
+//    vc.modalPresentationStyle = UIModalPresentationCustom;
+    
+    __weak typeof(self) weakSelf = self;
     [self.transDelegate setFromViewController:self toViewController:vc];
-    vc.transitioningDelegate = self.transDelegate;
-    [self presentViewController:vc animated:YES completion:nil];
+    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypePush direction:WCInteractiveTransitionGestureDirectionLeft gestureConifg:^{
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.transDelegate setPanGestureWithInteractiveType:WCInteractiveTransitionTypePop direction:WCInteractiveTransitionGestureDirectionRight gestureConifg:nil];
+    self.navigationController.delegate = self.transDelegate;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)presentDemoVC4 {

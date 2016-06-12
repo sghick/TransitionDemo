@@ -56,8 +56,13 @@
  */
 @property (assign, nonatomic) WCTransitioningDelegateVCType transVCType;
 
+// 相对vc,当从present到dismiss时,会互相交换
 @property (weak  , nonatomic, readonly) UIViewController *fromVC;
 @property (weak  , nonatomic, readonly) UIViewController *toVC;
+
+// 设置时的vc,不变
+@property (weak  , nonatomic, readonly) UIViewController *iniFromVC;
+@property (weak  , nonatomic, readonly) UIViewController *iniToVC;
 
 #pragma mark - DelegateBlock
 /**

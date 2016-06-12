@@ -63,12 +63,12 @@ typedef void (^WCAnimationDidStopDelegateBlock)(WCAnimatedTransitioning *transit
                                                 BOOL finished);
 
 typedef NS_ENUM(NSInteger, WCTransitioningDelegateType) {
-    WCTransitioningDelegateFTTrans, // 推出和收起各用一个动画
+    WCTransitioningDelegateFTTrans  = 0, // 推出和收起各用一个动画
     WCTransitioningDelegateSingle,  // 推出和收起只用一个动画
 };
 
 typedef NS_ENUM(NSInteger, WCTransitioningDelegateVCType) {
-    WCTransitioningDelegateVCFrom,
+    WCTransitioningDelegateVCFrom   = 0,
     WCTransitioningDelegateVCTo,
 };
 
